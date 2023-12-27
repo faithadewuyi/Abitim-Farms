@@ -5,7 +5,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 #banner{
-background: linear-gradient(rgba(0,0,0,0.5),#8B4513),url("images/broiler.jpg");
+background: linear-gradient(rgba(0,0,0,0.5),#8B4513),url("/images/broiler.jpg");
 background-size: cover;
 background-position: center;
 height:100vh;
@@ -230,9 +230,14 @@ padding-bottom: 70px;
     color:#fff;
     position: relative;
 }
+
+   
+
 .product img{
     width:80%;
     border-radius: 7px;
+    background-color: transparent;
+  
 }
 .overlay{
     width: 100%;
@@ -241,6 +246,7 @@ padding-bottom: 70px;
     top: 0;
     border-radius: 7px;
     cursor: pointer;
+ 
     background: linear-gradient(rgba(0,0,0,0.5),#8B4513);
     opacity: 0;
     transition: 1s;
@@ -306,7 +312,111 @@ hr{
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
-    box-shadow: 0;
+    box-shadow: 0 10px 20px 3px #8B4513;
+    cursor: pointer;
+    transition: 5secs;
 
 }
- 
+.testimonial-column{
+    font-size: 15px;
+}
+.user{
+    display:flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+width:40px;
+margin-right:20px;
+border-radius:20px;
+
+}
+.user-info{
+    margin-left: 10px;
+    color:#8B4513;
+    font-size: 20px;
+     
+} 
+.user-info small{
+    color: #E47600;
+    font-size: 15px ;
+}
+.testimonial-column:hover{
+    transform: translateY(7px)
+}
+@media screen and (max-width: 770px){
+    .testimonial-column{
+        flex-basis: 100%;
+    }
+}
+
+/* Footer */
+#footer{
+    background: #efefef;
+    position: relative;
+}
+.footer-row{
+   width:80%;
+   margin: 0 auto;
+   display: flex; 
+   justify-content: space-between;
+   flex-wrap: wrap;
+   
+}
+
+.footer-right, .footer-left, .footerSocial{
+     flex-basis: 45%;
+     padding: 10px;
+     margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+
+}
+.footer-row p{
+    line-height: 35px;
+}
+.footer-right .fa, .footer-left .fa{ 
+    font-size: 20px;
+    color:#8B4513;
+    margin: 8px;
+}
+.footerSocial {
+    text-align: center;
+   
+}
+.footerSocial .fa-brands{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border:1px solid #8B4513;
+    border-radius: 20px;
+    margin: 20px 5px 0;
+    color:#E47600;
+    cursor: pointer; 
+    transition: .5s;
+    
+}
+.footerSocial .fa-brands:hover{
+
+background: #E47600;
+color: #fff;
+transform: translateY(7px);
+}
+
+.footerSocial p{
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 770px){
+    .footer-right, .footer-left {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+}  
+

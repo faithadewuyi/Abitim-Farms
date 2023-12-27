@@ -13,27 +13,28 @@
 <!-- For icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
 
    <section id="banner">
-<img src="images/abitim.png" class="logo" alt="logo">
-<div class="text">
+       <img src="images/abitim.png" class="logo" alt="logo">
+    <div class="text">
     <h1>Abitim Farms</h1>
-    <p>Everything Broiler Chicken Arena</p>
+    <p>Everything Livestock Arena</p>
     <div class="banner-btn">
-        <a href="#"><span></span>View Products</a>
-        <a href="#"><span></span>Read More</a>
+        <a href="product.html"><span></span>View Products</a>
+        <a href="index.html"><span></span>Read More</a>
     </div>
-</div>
+    </div>
    </section> 
    <div id="sideNav">
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#product">Products</a></li>
+            <li><a href="product.html">Products</a></li>
             <li><a href="#testimonial">Testimonials</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -42,6 +43,7 @@
    <div id="toggle">
     <i class="fa-solid fa-bars" id="menu"></i>
   </div>
+
   <!-- About Section -->
   <section id="about">
     <div class="text-title">
@@ -88,14 +90,14 @@
     </div>
   </section>
   <!-- Product Section -->
-  <section id="product">
+  <!-- <section id="product"> 
      <div class="text-title">
         <p>Products</p>
         <h1>View Our Products</h1>
      </div>
      <div class="product-box">
         <div class="product">
-            <img src="images/3.jpg">
+            <img src="images/1.jpg">
             <div class="overlay"></div>
             <div class="details">
                 <h3>Whole Chicken</h3>
@@ -104,7 +106,7 @@
             </div>
         </div>
         <div class="product">
-            <img src="images/6.jpg">
+            <img src="images/t.jpg">
             <div class="overlay"></div>
             <div class="details">
             <h3>Gizzard</h3>
@@ -114,56 +116,101 @@
         </div>
         </div>
         <div class="product">
-            <img src="images/1.jpg">
+            <img src="images/3.jpg">
             <div class="overlay"></div>
             <div class="details">
                 <h3>Chicken Laps</h3>
                 <hr>
-                <p>From the farm to your table, our neatly dressed whole chickens are a symphony of freshness, flavor, and presentation. </p>
+                <p>From the farm to your table, our neatly chickens laps are a symphony of freshness, flavor, and presentation. </p>
             </div>
         </div>
         <div class="product">
-            <img src="images/4.jpg">
+            <img src="images/u.jpg">
             <div class="overlay"></div>
             <div class="details">
-                <h3>Live Broiler</h3>
+                <h3>Eggs</h3>
                 <hr>
-                <p>Elevate your dining experience by bringing the farm to your kitchen with our lively and robust live broilers. </p>
+                <p>Elevate your dining experience by bringing the farm to your kitchen . </p>
             </div>
        </div>
          </div>
-  </section>
+  </section>--->
   
   <!-- Testimonial -->
    <section id="testimonial">
     <div class="text-title">
         <p>TESTIMONIAL</p>
-        <h1>What Our Customers Say</h1>
+        <h1>What Our Customers Says</h1>
     </div>
     <div class="testimonial-row">
-        <div class="testimonial-column"></div> 
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="images/d.jpg">
+                <div class="user-info">
+                    <h4>Victoria</h4>
+                    <small>@Vicky</small>
+                </div>
+            </div>
+            <p>Finding a reliable source for farm-fresh eggs and frozen foods has been a game-changer for my family. The taste is incomparable, and knowing that the animals are raised in a healthy and humane environment gives us peace of mind.. We're customers for life!</p>
+        </div> 
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="images/c.jpg">
+                <div class="user-info">
+                    <h4>Oluwafemi</h4>
+                    <small>@gidsam</small>
+                </div>
+            </div>
+            <p>As someone who values organic and locally sourced foods, Abitim farm has become my preferred choice for rabbit.  The rabbit are always tender and succulent, making every meal a delightful experience. I'm grateful to have discovered this gem of a Abitim farm</p>
+        </div> 
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="images/b.jpg">
+                <div class="user-info">
+                    <h4>Igbagbo</h4>
+                    <small>@toltem</small>
+                </div>
+            </div>
+            <p>I've been sourcing my fresh eggs, rabbits, and turkeys from this incredible farm for over a year now. . It's evident that the animals are well cared for, resulting in products that are not only delicious but also ethically produced. .</p>
+        </div> 
     </div>
    </section>
-   <!-- Script source -->
-  <script>
-    var toggle = document.getElementById("toggle");
-    var menu = document.getElementById("menu");
-    var sideNav = document.getElementById("sideNav");
 
-    sideNav.style.right = "-250px";
-    toggle.onclick = function(){
-        if(sideNav.style.right == "-250px")
-        {
-            sideNav.style.right = "0";
-            menu.src = "images/close.png"
-        }
-        else
-        {
-            sideNav.style.right = "-250px";
-            menu.src = "images/menu.png"
-        }
-    }
-  </script>
+   <!-- Footer -->
+   <section id="footer">
+    <div class="text-title">
+        <p>CONTACT</p>
+        <h1>Visit Us Today</h1>
+    </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <p><i class="fa fa-clock"></i> Mondays to Fridays: 6am to 7pm</p>
+            <p><i class="fa fa-clock"></i>Saturdays: 10am to 8pm</p>
+            <p><i class="fa fa-clock"></i>Sundays: 12pm to 6pm</p>
+        </div>
+        
+        <div class="footer-right">
+            <h1>Get In Touch</h1>
+            <p>Afeki way, Oke-Opa, Ile-Ife <i class="fa fa-map-marker"></i></p>
+            <p>contact@abitimfarms.com <i class="fa fa-paper-plane"></i></p>
+            <p> +2348100322494 <i class="fa fa-phone"></i></p>
+        </div>
+       </div>
+       <div class="footerSocial">
+        
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter">  </i>
+        <i class="fa-brands fa-youtube"></i>
+        <p>
+            &copy; 2023 Digital. All Rights Reserved | Developed by Faith Adewuyi
+        </p>
+      </div>
+      
+    </section>
+   <!-- Script source -->
+  <script src="./script.js"></script>
  
 </body>
 </html>
