@@ -2,13 +2,14 @@
 margin: 0;
 padding:0;
 font-family: 'Roboto', sans-serif; 
+scroll-behavior: smooth;
 }
 
 #banner{
 background: linear-gradient(rgba(0,0,0,0.5),#8B4513),url("/images/broiler.jpg");
 background-size: cover;
 background-position: center;
-height:100vh;
+height:80vh;
 }
 .logo{
     border-radius:50%;
@@ -371,6 +372,10 @@ border-radius:20px;
 }
 .footer-right{
     text-align: right;
+}
+.footer-right a{
+text-decoration: none;
+color:black
 }
 .footer-row h1{
     margin: 10px 0;

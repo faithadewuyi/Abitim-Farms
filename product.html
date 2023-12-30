@@ -23,43 +23,43 @@ rel="stylesheet"
 </head>
 <body>
 
-   <div id="banner">
+    <div id="banner">
 <img src="images/abitim.png" class="logo" alt="logo">
 <div class="text">
     <h1>Abitim Farms</h1>
-    <p>Everything Broiler Chicken Arena</p>
+    <p>Everything Livestock Arena</p>
     <div class="banner-btn">
         <a href="product.html"><span></span>View Products</a>
         <a href="index.html"><span></span>Read More</a>
     </div>
 </div>
-</div> 
+</div>
    <div id="sideNav">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html">About Us</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="#products">Products</a></li>
             <li><a href="index.html">Testimonials</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
-     </div>
+     </div> 
    <div id="toggle">
     <i class="fa-solid fa-bars" id="menu"></i>
   </div>
   <div class="products">
     <h2>Our <span>Products</span></h2>
     <ul>
-      <li>Frozen</li>
-      <li>Eggs </a></li>
-      <li>Poultry</li>
+      <li>Frozen Foods</li>
+      <li>Live Chicken</a></li>
+      <li>Catfish</li>
       <li>Rabbits</li>
       
     </ul> 
   </div> 
   <!-- card section -->
-  <section>
+  <section id="products">
     <!-- <h3>FROZEN FOODS</h3> -->
     <!-- card 1 -->
     <div class="card">
@@ -67,25 +67,17 @@ rel="stylesheet"
         <img src="./images/1.jpg" alt="Whole chicken" />
       </div>
       <h3>Whole Chicken</h3>
-      <h4>$5</h4>
+      <h4>#2500 per Kg</h4>
       <button>Order Now</button>
     </div>
-    <!-- card 2 -->
-    <div class="card">
-      <div class="card-image-container">
-        <img src="./images/2.jpg" alt="frozen chicken" />
-      </div>
-      <h3>Whole Chicken</h3>
-      <h4>$8</h4>
-      <button>Order Now</button>
-    </div>
+       
     <!-- card 3 -->
     <div class="card">
       <div class="card-image-container">
         <img src="./images/3.jpg" alt="chicken laps" />
       </div>
       <h3>Chicken Laps</h3>
-      <h4>$10</h4>
+      <h4>#2500 per kg</h4>
       <button>Order Now</button>
     </div>
     <!-- card 4 -->
@@ -94,7 +86,7 @@ rel="stylesheet"
         <img src="./images/4.jpg" alt="chicken wings" />
       </div>
       <h3>Chicken Wings</h3>
-      <h4>$3</h4>
+      <h4>#2300 per kg</h4>
       <button>Order Now</button>
     </div>
     <!-- card 5 -->
@@ -103,7 +95,7 @@ rel="stylesheet"
         <img src="./images/5.jpg" alt="Gizzard" />
       </div>
       <h3>Gizzard</h3>
-      <h4>$30</h4>
+      <h4>#3000 per kg</h4>
       <button>Order Now</button>
     </div>
     <!-- card 6 -->
@@ -112,7 +104,7 @@ rel="stylesheet"
         <img src="./images/8.jpg" alt="Boneless Chicken" />
       </div>
       <h3>Boneless Chicken</h3>
-      <h4>$35</h4>
+      <h4>#3500 per kg</h4>
       <button>Order Now</button>
     </div>
     <!-- card 7 -->
@@ -121,16 +113,26 @@ rel="stylesheet"
         <img src="./images/o.jpg" alt="Broiler" />
       </div>
       <h3>Broiler</h3>
-      <h4>$32</h4>
+      <h4>#1700 per kg</h4>
       <button>Order Now</button>
     </div>
+
     <!-- card 8 -->
     <div class="card">
       <div class="card-image-container">
         <img src="./images/p.jpg" alt="layers" />
       </div>
       <h3>Layer</h3>
-      <h4>$50</h4>
+      <h4>#1000 per kg</h4>
+      <button>Order Now</button>
+    </div>
+    <!-- Card 11 -->
+    <div class="card">
+      <div class="card-image-container">
+        <img src="./images/ca.jpg" alt="frozen chicken" />
+      </div>
+      <h3>Cat Fish</h3>
+      <h4>#1250 per kg</h4>
       <button>Order Now</button>
     </div>
     <!-- card 9 -->
@@ -139,7 +141,7 @@ rel="stylesheet"
         <img src="./images/s.jpg" alt="Turkey" />
       </div>
       <h3>Turkey</h3>
-      <h4>$52</h4>
+      <h4>#19,250</h4>
       <button>Order Now</button>
     </div>
     <!-- card 10 -->
@@ -148,9 +150,10 @@ rel="stylesheet"
         <img src="./images/u.jpg" alt="Eggs" />
       </div>
       <h3>Eggs</h3>
-      <h4>$90</h4>
+      <h4>#3000 per crate</h4>
       <button>Order Now</button>
     </div>
+    
     <!-- card 11 -->
     <div class="card">
       <div class="card-image-container">
@@ -172,9 +175,9 @@ rel="stylesheet"
       
       <div class="footer-right">
           <h1>Get In Touch</h1>
-          <p>Afeki way, Oke-Opa, Ile-Ife <i class="fa fa-map-marker"></i></p>
-          <p>contact@abitimfarms.com <i class="fa fa-paper-plane"></i></p>
-          <p> +2348100322494 <i class="fa fa-phone"></i></p>
+          <p>Afeki way, Oke-Opa, Ile-Ife <i class="fa fa-map-marker" onclick="openGoogleMaps()"></i></p>
+            <p><a href="mailto:contact@abitimfarms.com">contact@abitimfarms.com <i class="fa fa-paper-plane"></i></a></p>
+            <p><a href="tel:+2348100322494">+2348100322494 <i class="fa fa-phone" onclick="callPhoneNumber()"></i></a></p>
       </div>
      </div>
      <div class="footerSocial">
