@@ -387,7 +387,7 @@ label{
     border-radius: 5px;
     border: 1px solid;
 }
-.form button{
+.form a{
     background-color: #E47600;
     color: #fff;
     width: 150px;
@@ -398,8 +398,10 @@ label{
     cursor: pointer;
     border: none;
     transition: 3s;
+    text-decoration: none;
+    padding: 10px
 }
-.form button:hover{
+.form a:hover{
     color:#E47600;
     transform: translateY(7px);
     background-color: #8B4513;;
